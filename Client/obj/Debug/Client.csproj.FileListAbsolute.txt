@@ -21,3 +21,14 @@ C:\Users\Dawid\Desktop\ServerClient\Client\obj\Debug\Client.csproj.CoreCompileIn
 C:\Users\Dawid\Desktop\ServerClient\Client\obj\Debug\Client.csproj.CopyComplete
 C:\Users\Dawid\Desktop\ServerClient\Client\obj\Debug\Client.exe
 C:\Users\Dawid\Desktop\ServerClient\Client\obj\Debug\Client.pdb
+D:\repos\ClientServerBlackJack\Client\bin\Debug\Client.exe.config
+D:\repos\ClientServerBlackJack\Client\bin\Debug\Client.exe
+D:\repos\ClientServerBlackJack\Client\bin\Debug\Client.pdb
+D:\repos\ClientServerBlackJack\Client\bin\Debug\InTheHand.Net.Personal.dll
+D:\repos\ClientServerBlackJack\Client\bin\Debug\NetworkCommsDotNet.pdb
+D:\repos\ClientServerBlackJack\Client\bin\Debug\InTheHand.Net.Personal.xml
+D:\repos\ClientServerBlackJack\Client\obj\Debug\Client.csprojAssemblyReference.cache
+D:\repos\ClientServerBlackJack\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\repos\ClientServerBlackJack\Client\obj\Debug\Client.csproj.CopyComplete
+D:\repos\ClientServerBlackJack\Client\obj\Debug\Client.exe
+D:\repos\ClientServerBlackJack\Client\obj\Debug\Client.pdb

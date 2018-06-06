@@ -11,6 +11,8 @@ namespace ServerClient
     {
         public static byte[] data;
         public static byte[] sizeOfData;
+
+
         static void Main(string[] args)
         {
             
