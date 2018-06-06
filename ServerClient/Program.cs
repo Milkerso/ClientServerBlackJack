@@ -12,19 +12,13 @@ namespace ServerClient
 {
     class Program
     {
-        static Boolean flags = false;
-        static int dataFileLengths;
-        static byte[] fileDatas;
-        static int dataFileSizeLengths;
-        static byte[] fileSizeDatas;
+    
         static void Main(string[] args)
         {
            
 
-            NetworkComms.AppendGlobalIncomingPacketHandler<byte[]>("FileData", readFileData);
-            NetworkComms.AppendGlobalIncomingPacketHandler<int>("FileDataLength", readFileDataLength);
-            NetworkComms.AppendGlobalIncomingPacketHandler<byte[]>("FileSizeData", readFileSizeData);
-            NetworkComms.AppendGlobalIncomingPacketHandler<int>("FileSizeDataLength", readFileSizeDataLength);
+            NetworkComms.AppendGlobalIncomingPacketHandler<String>("Welcome", welcome);
+   
           
             String ipAddress = "127.0.0.1";
             IPAddress address = IPAddress.Parse(ipAddress);
@@ -51,44 +45,9 @@ namespace ServerClient
             NetworkComms.Shutdown();
         }
 
-        private static void readFileDataLength(PacketHeader packetHeader, Connection connection, int dataFileLength)
+        private static void welcome(PacketHeader packetHeader, Connection connection, String incomingObject)
         {
-            Console.WriteLine(connection.ToString() + dataFileLength);
-            dataFileLengths = dataFileLength;
-            flags = true;
-
+            Console.WriteLine(incomingObject);
         }
-
-        private static void readFileData(PacketHeader packetHeader, Connection connection, byte[] fileData)
-        {
-            Console.WriteLine( connection.ToString() +fileData);
-            fileDatas = fileData;
-            ReadMessage();
-        }
-        private static void readFileSizeDataLength(PacketHeader packetHeader, Connection connection, int dataFileSizeLength)
-        {
-            Console.WriteLine(connection.ToString() + dataFileSizeLength);
-            dataFileSizeLengths = dataFileSizeLength;
-        }
-
-        private static void readFileSizeData(PacketHeader packetHeader, Connection connection, byte[] fileSizeData)
-        {
-            Console.WriteLine(connection.ToString() + fileSizeData);
-            fileSizeDatas = fileSizeData;
-        }
-        private static void  ReadMessage( )
-        {
-            string result = System.Text.Encoding.UTF8.GetString(fileDatas);
-            using (Stream stream = File.Open(@"C:\\Users\\Dawid\\Desktop\\ServerClient\\ServerClient\\" + "NewFile.txt", FileMode.Create))
-            {
-                stream.Write(fileDatas, 0, fileDatas.Length);
-                Console.WriteLine(">> File send.");
-            }
-                
-            Console.WriteLine(result);
-            Console.WriteLine(dataFileLengths);
-        }
-
-   
     }
 }

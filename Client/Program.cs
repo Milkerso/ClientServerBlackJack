@@ -9,8 +9,8 @@ namespace ServerClient
 {
     class Program
     {
-        public static byte[] data;
-        public static byte[] sizeOfData;
+
+    
 
 
         static void Main(string[] args)
@@ -36,8 +36,8 @@ namespace ServerClient
 
                     Console.Read();
 
-                    getData("TextFile1.txt");
-                 NetworkComms.SendObject("FileData", serverIP, serverPort, data);
+                  
+                 NetworkComms.SendObject("Welcome", serverIP, serverPort, "Witam");
                 
 
                 }
@@ -48,14 +48,6 @@ namespace ServerClient
         }
  
 
-        public static void getData(String filename)
-        {
-
-
-            data = System.IO.File.ReadAllBytes("C:\\Users\\Dawid\\Desktop\\ServerClient\\Client\\" + filename);
-            
-         
-        }
 
     }
     }
