@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
+using Client;
 using NetworkCommsDotNet;
 
 namespace ServerClient
@@ -29,11 +30,13 @@ namespace ServerClient
                 Console.WriteLine("Sending message to server saying '" + messageToSend + "'");
 
             
-                Console.WriteLine("\nPress q to quit or any other key to send another message.");
+                Console.WriteLine("\nPress q to quit or any other key to start Game");
                 if (Console.ReadKey(true).Key == ConsoleKey.Q) break;
                 else
                 {
-
+                    Deck deck = new Deck();
+                    deck.generateCardDeck();
+                    deck.displayDeck();
                     Console.Read();
 
                   
@@ -46,6 +49,7 @@ namespace ServerClient
             NetworkComms.Shutdown();
 
         }
+        
  
 
 

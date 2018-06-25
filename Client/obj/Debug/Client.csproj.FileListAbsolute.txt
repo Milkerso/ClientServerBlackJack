@@ -32,3 +32,14 @@ D:\repos\ClientServerBlackJack\Client\obj\Debug\Client.csproj.CoreCompileInputs.
 D:\repos\ClientServerBlackJack\Client\obj\Debug\Client.csproj.CopyComplete
 D:\repos\ClientServerBlackJack\Client\obj\Debug\Client.exe
 D:\repos\ClientServerBlackJack\Client\obj\Debug\Client.pdb
+C:\Users\Dawid\Desktop\git gra c#\ClientServerBlackJack\Client\bin\Debug\Client.exe.config
+C:\Users\Dawid\Desktop\git gra c#\ClientServerBlackJack\Client\bin\Debug\Client.exe
+C:\Users\Dawid\Desktop\git gra c#\ClientServerBlackJack\Client\bin\Debug\Client.pdb
+C:\Users\Dawid\Desktop\git gra c#\ClientServerBlackJack\Client\bin\Debug\InTheHand.Net.Personal.dll
+C:\Users\Dawid\Desktop\git gra c#\ClientServerBlackJack\Client\bin\Debug\NetworkCommsDotNet.pdb
+C:\Users\Dawid\Desktop\git gra c#\ClientServerBlackJack\Client\bin\Debug\InTheHand.Net.Personal.xml
+C:\Users\Dawid\Desktop\git gra c#\ClientServerBlackJack\Client\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Users\Dawid\Desktop\git gra c#\ClientServerBlackJack\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\Dawid\Desktop\git gra c#\ClientServerBlackJack\Client\obj\Debug\Client.csproj.CopyComplete
+C:\Users\Dawid\Desktop\git gra c#\ClientServerBlackJack\Client\obj\Debug\Client.exe
+C:\Users\Dawid\Desktop\git gra c#\ClientServerBlackJack\Client\obj\Debug\Client.pdb
